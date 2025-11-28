@@ -20,7 +20,7 @@ class App extends Component {
         desc:'Welcome to FrontEnd'
       },
       subject : {
-        title : "프론트엔드 개발자" ,
+        title : "프론트엔드 개발자 역량" ,
         desc : "기본언어인 html, css, javascript부터 학습합니다. ",
       },
       menus:[
