@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* reset & common */
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  border:none;
+  height: 1px;
+  width: 80%;
+  margin:50px auto 20px;
+  background: linear-gradient(to right, #fff, #999, #fff);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hidden{
+  display: none !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{  
+  padding: 20px;  
+}
+/* Main Style */
+header{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+header:after{  
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width:30%;
+  height: 2px;
+  background: #3498db;
+}
+.logo a{
+  cursor: pointer;
+  font-size: 1.3em;
+}
+nav ul{
+  padding: 0;
+}
+nav li{
+  line-height: 30px;
+  list-style:none;  
+}
+nav li + li{
+  margin-top: 10px;
+}
+nav li a{
+  padding: 5px 10px;
+  background: #ebebeb;
+  border-radius:15px;
+}
+.menu{
   display: flex;
-  flex-direction: column;
+  gap:20px;
+  list-style: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.menu a, 
+.menu input,
+.menu button{
+  padding: 10px 15px;
+  border:1px solid #ccc;
+  background: #ebebeb;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section article{
+  background: #fff;
+  box-shadow:0 0 20px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius:20px;
+  margin-top:30px;
+}
+.content{
+  background: #ebebeb;
 }
 
-.App-link {
-  color: #61dafb;
+.menu a, .menu input, .menu button{
+  border-radius:10px;
+  padding: 10px 12px;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.menu .primary{
+  background: #0d6efd;
+}
+.menu .secondary{
+  background:#6c757d;
+}
+.menu .danger{
+  background:#dc3545;
+}
+form label{
+  display: block;
+}
+form input,
+form textarea{
+  padding: 10px;
+  border:1px solid #ccc;
+  width: 70% !important;
+}
+form button{
+  background: #0d6efd;
+  border-radius:10px;
+  padding: 10px 15px;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+}
+.menu{
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
